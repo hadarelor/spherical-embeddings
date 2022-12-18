@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Spherical Embedding of Inlier Silhouette Dissimilarities</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+</head>
+<body>
+    <h1>Spherical Embedding of Inlier Silhouette Dissimilarities</h1>
+    <div class="authors">
+	        Etai Littwin, 
+        <a href="http://www.cs.tau.ac.il/~averbuch1/">Hadar Averbuch-Elor </a> and
+         <a href="http://www.cs.tau.ac.il/~dcor/">Daniel Cohen-Or</a>
+    </div>
+    <div class="institutions">
+        Tel Aviv University
+    </div>
+    <div class="conference">
+        <a href="http://www.pamitc.org/cvpr15/">CVPR 2015</a>
+    </div>
+ 
+   <div class="teaser">
+        <table class="results">
+            <tr>
+                <td><img alt="Results 1" src="nvhai.png" height="400"/></td>
+            </tr>
+        </table>
+        <p>
+        Figure: Given a set of silhouettes of an object as observed from a set of cameras arbitrarily positioned around an object, we first compute the full all-pairs dissimilarities. We discover the inlier silhouette dissimilarities using our inlier screening technique and obtain a sparse graph. We then perform an optimization to embed the sparse dissimilarities in SO(3). Assuming the contours are associated with photos, then one can place them on a sphere.
+        </p>
+    </div> 
+
+    <h2>Abstract</h2>
+    <p>
+	In this paper, we introduce a spherical embedding technique to position a given set of silhouettes of an object as observed from a set of cameras arbitrarily positioned around the object. Similar to previous works, we assume that the object silhouettes are the only visual cues provided, and thus traditional structure from motion (SfM) techniques based on common feature correspondence cannot be applied successfully. Our technique estimates dissimilarities among the silhouettes and embeds them directly in the rotation space SO(3). The embedding is obtained by an optimization scheme applied over the rotations represented with exponential maps.  Since the measure for inter-silhouette dissimilarities contains many outliers, our key idea is to perform the embedding by only using a subset of the estimated dissimilarities. We present a technique that carefully screens for inlier-distances, and the pairwise scaled dissimilarities are embedded in a spherical space, diffeomorphic to SO(3). We show that our method outperforms spherical multi-dimensional scaling (MDS) embedding, demonstrate its performance on various multi-view sets, and highlight its robustness to outliers.
+    </p>
+	
+    <h2>Resources</h2>
+	<a href="spherical.pdf">Paper</a> (PDF)<br />
+
+
+    <h2>BibTex Reference</h2>
+        <pre>@article{littwin2015spherical,
+    author = {Etai Littwin and Hadar Averbuch-Elor and Daniel Cohen-Or},
+    title   = {Spherical Embedding of Inlier Silhouette Dissimilarities},
+	booktitle = {Computer Vision and Pattern Recognition (CVPR), 2015 IEEE Conference on},
+	pages = {to appear},
+    year = 2015,
+}
+        </pre>
+
+     <h2>Presentation slides</h2>
+    <p>
+        To appear later...
+       <!-- <a href="slides.pptx">PPTX</a> (14MB)<br /> -->
+    </p>
+
+    <h2>Acknowledgements</h2>
+    <p>
+We thank Thomas Lewiner for his deep and insightful comments
+on exponential maps. This work was supported
+by the Israel Science Foundation and The Yitzhak and
+Chaya Weinstein Research Institute for Signal Processing.
+    </p>
+
+    <!-- <h2>Links</h2>
+    <p>
+    </p> -->
+
+    <p>
+    Last update to the page: April 12, 2015.<br />
+   <!--  Last update to the code: November 23, 2013. -->
+    </p>
+
+</body>
+</html>
