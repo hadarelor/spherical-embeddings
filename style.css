@@ -1,0 +1,85 @@
+h1,h2 { 
+    color: #0000ab; 
+    font-family: sans-serif; 
+}
+
+a.discrete { 
+    color: #0000ab; 
+    font-family: sans-serif; 
+    text-decoration: none;
+}
+
+p { 
+    font-size: 100%;
+    font-family: sans-serif;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 0em;
+}
+
+p.caption { 
+    font-size: 75%;
+    font-family: sans-serif;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.conference {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+div.authors {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+div.institutions {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+div.teaser {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    text-align: center;
+    width: 800px;
+}
+
+div.illustration {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+pre {
+    font-size: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 0em;
+}
+
+div.header {
+    background: rgb(206, 223, 242);
+    border: 1px solid rgb(163, 176, 191);
+    padding: 0.2em 0.4em;
+    margin: 3px;
+}
+
+table.results {
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+}
